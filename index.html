@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <!-- WEB ICON -->
+    <link rel="shortcut icon" href="./IMG/logo/calculator-logo.png" type="image/x-icon">
+    <!-- BOOTSTRAP -->
+
+    <!-- CSS STYLES -->
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <!-- TITLE -->
+    <title>CALCULATOR</title>
+</head>
+
+<body>
+
+    <main>
+        <h1>SMART CALCULATOR</h1>
+
+    <div class="calculator">
+        <div>
+            <input type="text" id="result" readonly>
+        </div>
+
+        <div class="grid-between">
+            <div class="numbers">
+
+                <div class="edit">
+                    <button onclick="clearInput()">AC</button>
+                    <button onclick="deleteData()">DEL</button>
+                    <button value="%" id="button" onclick="display(this)">%</button>
+                </div>
+
+                <div class="section1">
+                    <button value="7" id="button" onclick="display(this)">7</button>
+                    <button value="8" id="button" onclick="display(this)">8</button>
+                    <button value="9" id="button" onclick="display(this)">9</button>
+                </div>
+    
+                <div class="section2">
+                    <button value="4" id="button" onclick="display(this)">4</button>
+                    <button value="5" id="button" onclick="display(this)">5</button>
+                    <button value="6" id="button" onclick="display(this)">6</button>
+                </div>
+    
+                <div id="section 3">
+                    <button value="1" id="button" onclick="display(this)">1</button>
+                    <button value="2" id="button" onclick="display(this)">2</button>
+                    <button value="3" id="button" onclick="display(this)">3</button>
+                </div>
+
+                <div class="section4">
+                    <button value="0" id="button" onclick="display(this)">0</button>
+                    <button value="." id="button" onclick="display(this)">.</button>
+                </div>
+    
+            </div>
+        
+            <div class="operators">
+                <button value="+" id="button" onclick="display(this)">+</button>
+                <button value="-" id="button" onclick="display(this)">-</button>
+                <button value="*" id="button" onclick="display(this)">*</button>
+                <button value="/" id="button" onclick="display(this)">/</button>
+                <button onclick="calculateResult()">=</button>
+            </div>
+
+        </div>
+    </div>
+
+    </main>
+
+</body>
+
+<script src="./JS/script.js"></script>
+</html>

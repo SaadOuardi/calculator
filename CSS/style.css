@@ -1,0 +1,103 @@
+/* -----------------------------------------IMPORT----------------------------------------- */
+/* Bebas Neu */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+body{
+    background-color: black;
+    color: white;
+    max-height: fit-content;
+    padding: 0;
+    margin: 0;
+    font-size: 25px
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+button{
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+    border: solid 2px white;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+button[value="0"]{
+    width: 160px;
+}
+
+input{
+    color: white;
+    background-color: black;
+    height: 60px;
+    width: 330px;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 9px;
+    font-size: 30px;
+}
+.calculator{
+    width: fit-content;
+    height: fit-content;
+    background-color: black;
+    box-shadow: 4px 4px 5px white;
+    border: 2px solid white;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 25px 8px;
+}
+.numbers button {
+    background-color: rgb(53, 53, 53);
+    color: white;
+    margin-top: 10px;
+}
+.numbers button:hover{
+    background-color: rgb(124, 123, 123);
+}
+
+.operators button {
+    background-color: orange;
+    color: white;
+    margin-top: 10px;
+}
+.operators button:hover{
+    background-color: rgb(255, 201, 100);
+    color: white;
+    margin-top: 10px;
+}
+
+.operators{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+.edit button {
+    background-color: rgb(177, 175, 175);
+    color: black;
+}
+
+.grid-between{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: black;
+    width: fit-content;
+}
+
